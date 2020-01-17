@@ -6,6 +6,6 @@
   <%= f.label :cost %>
   <%= f.number_field :cost %>
   <%= f.label :country %>
-  <%= f.text_field :country %>
+  <%= f.select :country, ['The United States','China', 'India', 'Brazil'] %>
   <%= f.submit  %>
 <% end %>
