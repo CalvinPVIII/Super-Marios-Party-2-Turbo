@@ -16,4 +16,13 @@
 <p>There are no products to display</p>
 <% end %>
 
+<% if @popular.any? %>
+<h2>Most Popular</h2>
+<% @popular.each do |product| %>
+<p><%= link_to product.name, product_path(product)%></p>
+<% end %>
+<% else %>
+<p>There are no products to display</p>
+<% end %>
+
 <h4> <%= link_to "All Products", products_path %></h4>
