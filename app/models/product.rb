@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   has_many :reviews
-  scope :made_in_usa, -> {where(country: 'United States')}
+  scope :made_in_usa, -> {where(country: 'The United States')}
   before_save :capitalize
   validates :name,:cost,:country, presence: true
 
