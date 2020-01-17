@@ -1,0 +1,14 @@
+<h2>Edit Review</h2>
+
+<%= form_for [@product, @review] do |f| %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <%= f.submit  %>
+<% end %>
+<p><%= link_to "Delete", product_review_path(@product, @review),
+  :data => {:confirm => "You sure?",
+  :method => "delete"} %></p>

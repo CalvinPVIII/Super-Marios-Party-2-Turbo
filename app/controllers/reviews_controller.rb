@@ -13,7 +13,8 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @review = Review.new(review_params)
+    @product = Product.find(params[:product_id])
+    @review = @product.reviews.new(review_params)
     if @review.save
       redirect_to root_path
     else
@@ -34,9 +35,10 @@ class ReviewsController < ApplicationController
   end
 
   def update
+    @product = Product.find(params[:product_id])
     @review = Review.find(params[:id])
       if @review.update(review_params)
-        redirect_to product_path
+        redirect_to product_review_path(@product, @review)
       else
         render :edit
       end
@@ -47,7 +49,7 @@ class ReviewsController < ApplicationController
     @review.destroy
     redirect_to root_path
   end
-
+end
 
   private
   def review_params

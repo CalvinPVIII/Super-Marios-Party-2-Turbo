@@ -1,0 +1,16 @@
+<h2><%= @product.name %></h2>
+<h3>$<%= @product.cost %></h3>
+<h3>From: <%= @product.country %></h3>
+
+<p><%= link_to "Edit Product", edit_product_path(@product)%></p>
+<p><%= link_to "Add Review", new_product_review_path(@product)%></p>
+
+
+<% if @product.reviews.any? %>
+<h4>Reviews</h4>
+<% @product.reviews.each do |review| %>
+<% link = review.rating.to_s + " stars by " + review.author %>
+<p><%= link_to link, product_review_path(@product, review) %></p>
+<%end%>
+<%end%>
+<p><%= link_to "All Products", products_path%></p>
