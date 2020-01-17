@@ -4,7 +4,7 @@
   <%= f.label :content %>
   <%= f.text_area :content %>
   <%= f.label :rating %>
-  <%= f.number_field :rating %>
+  <%= f.select :rating, (1..5).to_a %>
   <%= f.label :author %>
   <%= f.text_field :author %>
   <%= f.submit  %>

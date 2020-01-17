@@ -1,8 +1,8 @@
 class Product < ApplicationRecord
   has_many :reviews
+  validates :name,:cost,:country, presence: true
   scope :made_in_usa, -> {where(country: 'The United States')}
   before_save :capitalize
-  validates :name,:cost,:country, presence: true
   scope :most_reviewed, -> {where(id: Product.review_most_product_ids.keys[0])}
   def self.most_recent_three
     Product.last(3)
