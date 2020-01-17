@@ -24,7 +24,7 @@ Review.destroy_all
 
 250.times do |index|
   Review.create!(author: Faker::Sports::Basketball.player,
-                        content: Faker::Lorem.sentence(word_count: 25),
+                        content: Faker::Lorem.sentence(word_count: 20),
                         rating: rand(1..5),
                         product_id: ids.sample)
 end
