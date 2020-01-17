@@ -1,2 +1,10 @@
+<% if @products.any? %>
+<h2>Recent Products</h2>
+<% @products.each do |product| %>
+<p><%= link_to product.name, product_path(product)%></p>
+<% end %>
+<% else %>
+<p>There are no products to display</p>
+<% end %>
 
-<p>Find me in app/views/home/index.html.erb</p>
+<h4> <%= link_to "All Products", products_path %></h4>
