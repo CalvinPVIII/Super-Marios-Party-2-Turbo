@@ -1,3 +1,8 @@
+<div class="grid-container">
+
+
+<div class="left-pipe">
+
 <% if @products.any? %>
 <h2>Recent Products</h2>
 <% @products.each do |product| %>
@@ -6,7 +11,9 @@
 <% else %>
 <p>There are no products to display</p>
 <% end %>
+</div>
 
+<div class="middle-pipe">
 <% if @usa_products.any? %>
 <h2>Local Products</h2>
 <% @usa_products.each do |product| %>
@@ -15,7 +22,10 @@
 <% else %>
 <p>There are no products to display</p>
 <% end %>
+</div>
 
+
+<div class="right-pipe">
 <% if @popular.any? %>
 <h2>Most Popular</h2>
 <% @popular.each do |product| %>
@@ -24,5 +34,7 @@
 <% else %>
 <p>There are no products to display</p>
 <% end %>
+</div>
 
 <h4> <%= link_to "All Products", products_path %></h4>
+</div>
