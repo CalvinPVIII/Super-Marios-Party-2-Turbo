@@ -1,23 +1,117 @@
 body {
   background-image: url('https://wallpapercave.com/wp/wp2866483.png');
+  font-family: 'Bangers', cursive;
+}
+
+h1{
+  text-align: center;
+  font-size: 100px;
+  color: #fa4028
 }
 
 .left-pipe {
   float: left;
-  height: 100%;
-  width: 30%;
-  align-items: flex-start;
-  outline: 1px solid red;
+  width: 33.33%;
+  background-image: url('https://i.imgur.com/ljoSrVj.png');
+  background-repeat: no-repeat;
+  height: 571px;
+  margin-top: 150px;
+  color: #facc14;
+  text-shadow: 2px 2px black
+
 }
+
 .right-pipe {
-  float: right;
-  align-items: flex-end;
-}
-.middle-pipe {
+  float: left;
+  height: 571px;
+  width: 33.33%;
   align-items: center;
+  background-repeat: no-repeat;
+  background-image: url('https://i.imgur.com/8YGsSX7.png');
+  background-position: right;
+  margin-top: 150px;
+  color: #26ed58;
+  text-shadow: 2px 2px black
 }
-.grid-container {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
+
+.middle-pipe {
+  float: left;
+  height: 571px;
+  width: 33.33%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: url('https://i.imgur.com/Haq7CTb.png');
+  background-position: center;
+  color: #fa142f;
+  text-shadow: 2px 2px black;
+  margin-top: 150px;
+}
+
+.pipe-contents-left {
+  text-align: center;
+  margin-right: 50%;
+  font-size: 30px;
+}
+.pipe-contents-middle {
+  text-align: center;
+  font-size: 30px;
+}
+.pipe-contents-right {
+  text-align: center;
+  margin-left: 50%;
+  font-size: 30px;
+
+}
+
+.pipe-contents-right a:visited, .pipe-contents-left a:visited, .pipe-contents-middle a:visited, .pipe-contents-right a, .pipe-contents-left a, .pipe-contents-middle a {
+  color: #bdf6ff;
+
+}
+
+#all-button {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 200px;
+
+}
+
+#all-button a {
+  color: #fa4028;
+}
+
+.button-background {
+  background-image: url('http://icons.iconarchive.com/icons/ph03nyx/super-mario/256/Lakitu-icon.png');
+  background-repeat:  no-repeat;
+  height: 200px;
+  background-size: 200px;
+  background-position: center;
+
+}
+
+.pipe-title {
+  margin-top: 25px;
+}
+
+.list-background {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: right;
+  border: 1px solid red;
+  color: #fa4028;
+  float: left;
+  height: 1080px;
+  width: 1900px;
+  opacity: 0.7;
+  background-color: #7350f2
+}
+
+.list-background a {
+  color: white;
+  opacity: 1;
+  font-size: 30px;
+  text-shadow: 2px 2px red;
+
 
 }
