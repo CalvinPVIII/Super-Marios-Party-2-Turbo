@@ -24,7 +24,7 @@ _Mario's Specialty Food is a basic web application that allows for a user to cre
 * _Run the command "bundle install"_
 * _Run the command "rake db:create"_
 * _Run the command "rake db:migrate_
-* _Run the command "rais s"_
+* _Run the command "rails s"_
 * _In a web browser, navigate to "localhost:3000"_
 
 
