@@ -9,7 +9,7 @@
 Product.destroy_all
 
 50.times do |index|
-  Product.create!(name: Faker::Food.spice,
+  Product.create!(name: Faker::Food.dish,
                         cost: rand(1..100),
                         country: ['The United States','China', 'India', 'Brazil'].sample)
 end
