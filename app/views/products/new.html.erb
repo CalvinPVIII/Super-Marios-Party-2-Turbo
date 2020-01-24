@@ -1,5 +1,5 @@
 <h2>New Product</h2>
-
+<%= render "layouts/errors", :object => @product %>
 <%= form_for @product do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
