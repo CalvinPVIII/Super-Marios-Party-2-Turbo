@@ -5,6 +5,7 @@
 <h3><%= @review.rating%> stars</h3>
 <p><%= @review.content%></p>
 </div>
-
+<% if current_user && current_user.admin == true %>
 <p><%= link_to "Edit Review", edit_product_review_path(@product, @review)%></p>
+<%end%>
 <p><%= link_to "Return to Product", product_path(@product)%></p>

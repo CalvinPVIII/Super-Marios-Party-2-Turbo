@@ -3,8 +3,9 @@
 <h2><%= @product.name %></h2>
 <h3>$<%= @product.cost %></h3>
 <h3>Made In <%= @product.country %></h3>
-
+<% if current_user && current_user.admin == true %>
 <p><%= link_to "Edit Product", edit_product_path(@product)%></p>
+<%end%>
 <p><%= link_to "Add Review", new_product_review_path(@product)%></p>
 
 

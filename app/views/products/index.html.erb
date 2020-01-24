@@ -9,5 +9,7 @@
 <p>There are no products to display</p>
 <% end %>
 </div>
+<% if current_user && current_user.admin == true %>
 <p><%= link_to "Add a product", new_product_path%></p>
+<%end%>
 <p><%= link_to "Home", root_path%></p>
