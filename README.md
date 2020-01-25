@@ -1,6 +1,6 @@
-# _Mario's Specialty Food_
+# _Super Mario's Specialty Food Turbo_
 
-#### _Database Experimenting, 1/17/2020_
+#### _Database Experimenting, 1/24/2020_
 
 #### By _**Calvin Will**_
 
@@ -15,7 +15,7 @@ _Mario's Specialty Food is a basic web application that allows for a user to cre
 | A person can review  a product  | I thought the product was good... 4 stars... Rob  | 4 Stars by Rob... I thought the product was good  |
 | The name of a project can be updated  | Pizza Chaffle  | Recent Products:  Pizza Chaffle  |
 | A person can update their review  | I thought the product was pretty good... 4 stars... Bob  | 4 Stars by Bob... I thought the product was pretty good  |
-
+| A person can create an account | Email: user@gmail.com Password: 123 Password Confirmation 123 | Account successfully created |
 
 ## Setup/Installation Requirements
 **PSQL and Rails is required for the database**
@@ -30,7 +30,7 @@ _Mario's Specialty Food is a basic web application that allows for a user to cre
 
 ## Known Bugs
 
-_Currently there are no known bugs_
+_When files that related to the backend are altered in anyway (such as simply adding one extra line and saving), the front end will throw nil nil class errors until a new product or review is created._
 
 ## Support and contact details
 
